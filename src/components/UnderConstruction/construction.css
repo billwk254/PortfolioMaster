@@ -1,0 +1,29 @@
+.floater {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+}
+
+.floater.visible {
+    opacity: 1;
+}
+
+.floater.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.floater-content {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 10px;
+}
